@@ -1,0 +1,114 @@
+/* Importación de una tipografía atractiva */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Estilos globales */
+body {
+    font-family: 'Poppins', sans-serif;  /* Nueva tipografía */
+    background-color: #F6F1E9; /* Fondo cálido */
+    color: #4A403A; /* Color de texto marrón oscuro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #DDB892; /* Tono cálido */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #A47551; /* Café cálido */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #E8C39E; /* Contraste cálido */
+    border-radius: 5px;
+}
+
+/* Secciones */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #FFFFFF; /* Fondo blanco para contraste */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Imágenes circulares */
+section img {
+    width: 250px;  /* Ajusta el tamaño de la imagen */
+    height: 250px;
+    border-radius: 50%; /* Forma circular */
+    border: 4px solid #A47551; /* Delineado cálido */
+    object-fit: cover; /* Asegura que la imagen ocupe todo el círculo */
+}
+
+/* Encabezados de sección */
+section h2 {
+    color: #A47551; /* Café cálido para los títulos */
+    font-weight: 600;
+}
+
+section h3 {
+    color: #DDB892; /* Tono cálido para subtítulos */
+    font-weight: 400;
+}
+
+/* Tablas de hoteles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #F9F5EB;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #A47551; /* Encabezados con un tono cálido */
+    color: white;
+}
+
+table tr:hover {
+    background-color: #F1E0C5; /* Color cálido para el hover en filas */
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #DDB892; /* Fondo cálido */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoteles y Hostales</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Consulta de Hoteles y Hostales</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="#hoteles">Lista de Hoteles y Hostales</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hoteles">
+        <h2>Hoteles y Hostales Disponibles</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Dirección</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for hotel in hoteles %}
+                <tr>
+                    <td>{{ hotel[0] }}</td>
+                    <td>{{ hotel[1] }}</td>
+                    <td>{{ hotel[2] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Turismo Ecológico. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
